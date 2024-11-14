@@ -45,24 +45,26 @@
             top: 50%;
             transform: translateY(-50%);
             font-family: 'Times New Roman', Times, serif;
-            font-size: 2rem;
+            font-size: 3rem;
             color: white;
             text-transform: uppercase;
             animation: flash 1s infinite;
             z-index: 3;
+            width: 100%;
+            text-align: center;
         }
         .left {
-            left: 10%;
+            left: 0;
         }
         .right {
-            right: 10%;
+            right: 0;
         }
         @keyframes flash {
             0%, 100% {
                 opacity: 1;
             }
             50% {
-                opacity: 0;
+                opacity: 0.5;
             }
         }
     </style>
@@ -71,8 +73,6 @@
     <img id="background" src="https://usagif.com/wp-content/uploads/flag-america-usa.gif" alt="Background GIF">
     <a href="#" id="overlay" onclick="playVideo(event)">
         <img src="https://i.ibb.co/WH5DfKH/Squirrels-for-trump.png" alt="Squirrels-for-trump" border="0">
-        <div class="flash-text left">CLICK FOR SAIYAN</div>
-        <div class="flash-text right">CLICK FOR SAIYAN</div>
     </a>
 
     <script>
